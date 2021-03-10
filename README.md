@@ -1,7 +1,7 @@
 # web-scraping-challenge
 homework assignment
 
-Step 1 - Scraping
+# Step 1 - Scraping
 Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
 Create a Jupyter Notebook file called mission_to_mars.ipynb and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
@@ -10,7 +10,7 @@ NASA Mars News
 
 Scrape the NASA Mars News Site and collect the latest News Title and Paragraph Text. Assign the text to variables that you can reference later.
 
-# Example:
+Example:
 news_title = "NASA's Next Mars Mission to Investigate Interior of Red Planet"
 
 news_p = "Preparation of NASA's next spacecraft to Mars, InSight, has ramped up this summer, on course for launch next May from Vandenberg Air Force Base in central California -- the first interplanetary launch in history from America's West Coast."
@@ -49,7 +49,7 @@ Append the dictionary with the image url string and the hemisphere title to a li
 
 
 
-Step 2 - MongoDB and Flask Application
+# Step 2 - MongoDB and Flask Application
 Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
 
 Start by converting your Jupyter notebook into a Python script called scrape_mars.py with a function called scrape that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
@@ -67,7 +67,7 @@ Create a template HTML file called index.html that will take the mars data dicti
 
 
 
-Step 3 - Submission
+# Step 3 - Submission
 To submit your work to BootCampSpot, create a new GitHub repository and upload the following:
 
 The Jupyter Notebook containing the scraping code used.
@@ -80,8 +80,8 @@ Ensure your repository has regular commits (i.e. 20+ commits) and a thorough REA
 
 
 
-Hints
 
+# Hints
 
 Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.
 
@@ -91,5 +91,3 @@ Use Bootstrap to structure your HTML template.
 
 
 
-Copyright
-Trilogy Education Services © 2021. All Rights Reserved.
