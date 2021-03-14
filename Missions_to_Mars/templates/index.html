@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="jumbotron text-center">
       <h1>Mission To Mars</h1>
@@ -19,14 +19,63 @@
 
     <!-- Mars Scraping -->
     <div class="row" id="mars information">
-      <div class="col-md-12">
-        <h4 class="heading">{{listings.price}} {{listings.headline}}</h4>
-        <small>{{listings.reviews}}</small>
+      <div class="container-fluid">
+        <h3> <strong><class="heading">Latest Mars News </strong></h3><p></p>
+          <p><h4> {{mars.news_title}} </h4></p>
+          <p> {{mars.news_p}}</p>
+      </div>
+    </div>
+
+  
+          <div class="col-md-6" id="mars image">
+            <div class="container"></div>
+          <p> <h3> <strong>Mars Featured Image of the Day</strong></h3><img src={{mars.featured_image_url}}> </p>
+        
+          
+        </div>
+          <div class="col-md-6" id="mars facts">
+            <div class="container">
+          <p> <h3> <strong>Mars Facts!</strong></h3><table class="table table-striped"><h5>{{mars.facts|safe}}</h5> </table></p>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+
+        
+
+        <div class="row">
+        </div><div class="row">
+        </div>
+
+          <p> <h3> <strong>Mars Hemispheres</strong></h3></p>
+          <div class="row">
+          <div class="container">
+            <div class="col-md-6" id="mars hemispheres">
+                <p><h4>{{mars.hemisphere[0]['title']}}</h4><img src={{mars.hemisphere[0]['img_url']}} alt="Cerberus Hemisphere Enhanced" width="500" height="500"></p>
+              
+                
+                <p><h4>{{mars.hemisphere[1]['title']}}</h4><img src={{mars.hemisphere[1]['img_url']}} alt="Schiaparelli Hemisphere Enhanced" width="500" height="500"></p>
+              </div>
+              <div class="row">
+                <div class="col-md-6" id="mars hemispheres">
+                <div class="col">
+                  <p><h4>{{mars.hemisphere[2]['title']}}</h4><img src={{mars.hemisphere[2]['img_url']}} alt="Syrtis Major Hemisphere Enhanced" width="500" height="500"></p>
+                </div>
+                <div class="col">
+                  <p><h4>{{mars.hemisphere[3]['title']}}</h4><img src={{mars.hemisphere[3]['img_url']}} alt="Valles Marineris Hemisphere Enhanced" width="500" height="500"></p>
+                </div>
+                <div class="row">
+            </div>
+          </div>
+
+
       </div>
     </div>
 
   </div>
 </body>
+<footer>
 
+</footer>
 </html>
 
